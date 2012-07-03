@@ -1,10 +1,13 @@
-	{"user":"mkn3",
+/* based on this comment schema	
+	{
+	"user":"mkn3",
 	"upvote":"0",
 	"downvote":"0",
 	"description":"The answer to your question is...",
 	"questionIDs":"pJfznhheQuOicWWAjx7F00",
 	"timestamp":"2012-06-30"
 	}
+*/	
 
 //Comment Model
 var Comment = function(user){
