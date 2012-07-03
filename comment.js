@@ -14,9 +14,9 @@ var Comment = function(user){
 	this.user = user;
 	this.upvote = 0;
 	this.downvote = 0;
-	this.description = "No Comment.";
-	this.id = "pJfznhheQuOicWWAjx7F00";
-	this.timestamp	= "2012-07-01";
+	this.description = 'No Comment.';
+	this.id = 'pJfznhheQuOicWWAjx7F00';
+	this.timestamp	= '2012-07-01';
 }
 
 Comment.prototype.getDescription = function(){
@@ -43,4 +43,6 @@ Comment.prototype.downvote = function(){
 	this.downvote = this.downvote + 1;
 }
 
-module.exports = Comment;
+exports.build = function(user) {
+	return new Comment(user);
+}

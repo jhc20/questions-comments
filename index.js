@@ -20,13 +20,16 @@ this.main = function () {
 }
 
 
-var importToEs = function (f_name) {
-    fs.readFile(f_name, function (err, data) {
+var importToEs = function (f_name) {    
+    fs.readFile(f_name, function (err, data) {        
         if (err) {
             throw err;
         }
         else {            
             var json_data = JSON.parse(data);
+    
+            console.log("data = \n");
+            console.log(json_data);
 
             var total = 0;
             json_data.forEach(function(data) {
