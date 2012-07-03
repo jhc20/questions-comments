@@ -1,0 +1,8 @@
+{
+	"name": "node-es-import-json",
+	"version": "0.0.2",
+	"dependencies": {
+		"com.izaakschroeder.elasticsearch": ">=0.0.1",
+        "optimist": "*"
+	}
+}
